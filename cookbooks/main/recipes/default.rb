@@ -1,3 +1,4 @@
+include_recipe "nginx_cors_fix"
 #execute "testing" do
 #  command %Q{
 #    echo "i ran at #{Time.now}" >> /root/cheftime
