@@ -23,7 +23,7 @@ if ['solo', 'app', 'util', 'app_master'].include?(node[:instance_role])
 
   link "/etc/ssmtp/ssmtp.conf" do
     Chef::Log.info "The framework environment inside link is '#{node[:environment][:framework_env]}'"
-    to "/data/citizentest/current/config/ssmtp/#{node[:environment][:framework_env]}.conf"
+    to "/data/theorytest/current/config/ssmtp/#{node[:environment][:framework_env]}.conf"
   end
 
 end
