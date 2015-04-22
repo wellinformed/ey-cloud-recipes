@@ -3,6 +3,8 @@
 # Recipe:: default
 #
 
+service "nginx"
+
 if ['app_master', 'app', 'solo'].include?(node[:instance_role])
   node[:applications].each do |app, data|
 
