@@ -5,6 +5,10 @@
 
 service "nginx"
 
+service "nginx" do
+  supports reload: true
+end
+
 if ['app_master', 'app', 'solo'].include?(node[:instance_role])
   node[:applications].each do |app, data|
     template "/tmp/location.block" do
