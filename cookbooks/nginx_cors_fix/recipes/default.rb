@@ -13,7 +13,7 @@ if ['app_master', 'app', 'solo'].include?(node[:instance_role])
       source 'location.block.erb'
       owner node[:owner_name]
       group node[:owner]
-      notifies :reload, resources(:service => "nginx")
+      notifies :reload, resources(:service => "nginx"), :delayed
     end
   end
 end
