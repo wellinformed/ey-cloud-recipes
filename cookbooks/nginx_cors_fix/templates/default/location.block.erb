@@ -1,4 +1,6 @@
 location ^~ /(assets|stylesheets) {
-  expires 10y;
-  add_header Access-Control-Allow-Origin *;
+  if ($request_filename ~ (ttf|ttc|otf|eot|woff)$) {
+    expires 10y;
+    add_header Access-Control-Allow-Origin *;
+  }
 }
