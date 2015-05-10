@@ -4,6 +4,8 @@
 # uncomment to use the db_client_lib cookbook -- requires additional configuration
 # include_recipe "db_client_libs"
 
+include_recipe "delayed_job"
+
 #execute "testing" do
 #  command %Q{
 #    echo "i ran at #{Time.now}" >> /root/cheftime
