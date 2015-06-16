@@ -126,13 +126,13 @@ include_recipe "delayed_job"
 #include_recipe "postgresql_maintenance"
 
 #enable Extension modules for a given Postgresql database
-# if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
+if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
   # Extensions that support Postgres >= 9.0
   # postgresql9_autoexplain "dbname"
   # postgresql9_btree_gin "dbname"
   # postgresql9_btree_gist "dbname"
   # postgresql9_chkpass "dbname"
-  # postgresql9_citext "dbname"
+  postgresql9_citext "dbname"
   # postgresql9_cube "dbname"
   # postgresql9_dblink "dbname"
   # postgresql9_dict_int "dbname"
@@ -144,7 +144,7 @@ include_recipe "delayed_job"
   # postgresql9_isn "dbname"
   # postgresql9_lo "dbname"
   # postgresql9_ltree "dbname"
-  # postgresql9_pg_trgm "dbname"
+  postgresql9_pg_trgm "icehitman"
   # postgresql9_pgcrypto "dbname"
   # postgresql9_pgrowlocks "dbname"
 
@@ -173,7 +173,7 @@ include_recipe "delayed_job"
   # Admin-Level Contribs
   # postgresql9_pg_buffercache "postgres"
   # postgresql9_pg_freespacemap "postgres"
-# end
+end
 
 #uncomment to include the motd customization related to the environment
 #include_recipe "env_motd"
