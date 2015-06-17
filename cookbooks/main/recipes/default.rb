@@ -135,47 +135,47 @@
 #enable Extension modules for a given Postgresql database
 if ['solo','db_master', 'db_slave'].include?(node[:instance_role])
   # Extensions that support Postgres >= 9.0
-  # postgresql9_autoexplain "dbname"
-  # postgresql9_btree_gin "dbname"
-  # postgresql9_btree_gist "dbname"
-  # postgresql9_chkpass "dbname"
-  postgresql9_citext "dbname"
-  # postgresql9_cube "dbname"
-  # postgresql9_dblink "dbname"
-  # postgresql9_dict_int "dbname"
-  # postgresql9_dict_xsyn "dbname"
-  # postgresql9_earthdistance "dbname"
-  # postgresql9_fuzzystrmatch "dbname"
-  # postgresql9_hstore "dbname"
-  # postgresql9_intarray "dbname"
-  # postgresql9_isn "dbname"
-  # postgresql9_lo "dbname"
-  # postgresql9_ltree "dbname"
+  # postgresql9_autoexplain "icehitman"
+  # postgresql9_btree_gin "icehitman"
+  # postgresql9_btree_gist "icehitman"
+  # postgresql9_chkpass "icehitman"
+  postgresql9_citext "icehitman"
+  # postgresql9_cube "icehitman"
+  # postgresql9_dblink "icehitman"
+  # postgresql9_dict_int "icehitman"
+  # postgresql9_dict_xsyn "icehitman"
+  # postgresql9_earthdistance "icehitman"
+  # postgresql9_fuzzystrmatch "icehitman"
+  # postgresql9_hstore "icehitman"
+  # postgresql9_intarray "icehitman"
+  # postgresql9_isn "icehitman"
+  # postgresql9_lo "icehitman"
+  # postgresql9_ltree "icehitman"
   postgresql9_pg_trgm "icehitman"
-  # postgresql9_pgcrypto "dbname"
-  # postgresql9_pgrowlocks "dbname"
+  # postgresql9_pgcrypto "icehitman"
+  # postgresql9_pgrowlocks "icehitman"
 
   # PostGis 1.5 (use with versions 9.0, 9.1, 9.2 on 2009a/stable-v2)
-  # postgresql9_postgis "dbname"
+  # postgresql9_postgis "icehitman"
 
   # PostGis 2.1 (use with version 9.2 on 2009a/stable-v2 and all versions on 12.11/stable-v4)
-  # postgresql9_postgis2 "dbname"
+  # postgresql9_postgis2 "icehitman"
 
-  # postgresql9_seg "dbname"
-  # postgresql9_sslinfo "dbname"
-  # postgresql9_tablefunc "dbname"
-  # postgresql9_test_parser "dbname"
-  # postgresql9_unaccent "dbname"
-  # postgresql9_uuid_ossp "dbname"
+  # postgresql9_seg "icehitman"
+  # postgresql9_sslinfo "icehitman"
+  # postgresql9_tablefunc "icehitman"
+  # postgresql9_test_parser "icehitman"
+  # postgresql9_unaccent "icehitman"
+  # postgresql9_uuid_ossp "icehitman"
 
 
   # 9.1 and 9.2 Extensions
-  # postgresql9_file_fdw "dbname"
-  # postgresql9_xml2 "dbname"
+  # postgresql9_file_fdw "icehitman"
+  # postgresql9_xml2 "icehitman"
 
   # 9.2 Extensions
   # Note: pg_stat_statements requires a server restart to complete installation
-  # postgresql9_pg_stat_statements "dbname"
+  # postgresql9_pg_stat_statements "icehitman"
 
   # Admin-Level Contribs
   # postgresql9_pg_buffercache "postgres"
