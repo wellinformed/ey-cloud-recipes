@@ -1,10 +1,11 @@
+include_recipe "delayed_job"
+include_recipe 'imagemagick'
+
 # uncomment to use a custom database.yml configuration
 # include_recipe "database_yml_custom"
 
 # uncomment to use the db_client_lib cookbook -- requires additional configuration
 # include_recipe "db_client_libs"
-
-include_recipe "delayed_job"
 
 #execute "testing" do
 #  command %Q{
