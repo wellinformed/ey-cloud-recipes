@@ -1,4 +1,4 @@
-include_recipe "delayed_job"
+include_recipe "delayed_job4"
 include_recipe 'imagemagick'
 
 # uncomment to use a custom database.yml configuration

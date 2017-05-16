@@ -42,6 +42,6 @@ worker_count = if node[:instance_role] == 'solo'
                  end
                end
 
-default['delayed_job4']['is_dj_instance'] = node[:instance_role] == "solo" || (node[:instance_role] == "util" && node[:name] !~ /^(mongodb|redis|memcache)/)
+default['delayed_job4']['is_dj_instance'] = node[:instance_role] == "solo" || node[:instance_role] == 'app_master' || (node[:instance_role] == "util" && node[:name] !~ /^(mongodb|redis|memcache)/)
 default['delayed_job4']['worker_count'] = worker_count
-default['delayed_job4']['worker_memory'] = 300
+default['delayed_job4']['worker_memory'] = 600
