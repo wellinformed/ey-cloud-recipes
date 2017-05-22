@@ -106,7 +106,7 @@ if [ -d $RAILS_ROOT ]; then
   HOME="/home/$USER" ; export HOME
   RESULT=0
   GRACE_TIME=${GRACE_TIME:-60}
-  let "GRACE_TIME=$GRACE_TIME*4"
+  let "GRACE_TIME=$GRACE_TIME*20"
 
   mkdir -p /var/run/engineyard/dj/$1
 
@@ -186,4 +186,3 @@ else
   echo "/data/$1/current doesn't exist."
   usage
 fi
-
